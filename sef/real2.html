@@ -1,0 +1,73 @@
+<style>
+body{
+  background: #ddd;
+}
+
+.timeline{
+  max-width: 400px;
+  background: green;
+  position: relative;
+  height: 400px;
+  margin: auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 20%;
+
+}
+
+.container{
+  position: relative;
+  padding: 10px 20px;
+  background: white;
+  width: 60%;
+  left: 25%;
+  top: 20px;
+}
+
+.container::before{
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background:purple;
+  left: -29;
+  border-radius:50%;
+  top: 8px;
+}
+
+.right{
+  background: white;
+  right: 0;
+}
+
+.right::after{
+  content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 30px 30px 30px 30px;
+    border-color: transparent orange transparent transparent;
+}
+
+
+
+</style>
+
+
+<div class="timeline">
+<div class="container right">
+<div>rr</div>
+</div>
+
+</div>

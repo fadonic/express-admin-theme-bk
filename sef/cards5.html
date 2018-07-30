@@ -1,0 +1,915 @@
+<!Doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--<![endif]-->
+
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="robots" content="all,follow">
+        <title>Sel Admin by x.com</title>
+        <!-- font-awesome CSS external-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <!-- Bootstrap CSS external-->
+        <link rel="stylesheet" href="assets/css/bootstrap.css" />
+        <!-- custom CSS internal-->
+        <link  rel="stylesheet" href="assets/css/canvas.css"/>
+        <link  rel="stylesheet" href="assets/Icon-font-7-stroke-PIXEDEN-v-1.2.0/pe-icon-7-stroke/css/pe-icon-7-stroke.css"/>
+        <link  rel="stylesheet" href="assets/Icon-font-7-stroke-PIXEDEN-v-1.2.0/pe-icon-7-stroke/css/helper.css"/>
+        <link  rel="stylesheet" href="assets/css/jquery.dataTables.min.css"/>
+        <link  rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css"/>
+        <link  rel="stylesheet"  href="https://www.amcharts.com/lib/3/plugins/export/export.css"  media="all" />
+        <link  rel="stylesheet" href="assets/css/custom.css"/>
+
+    </head>
+
+    <body>
+
+        <div class="wrapper"> <!--page wrapper -->
+
+            <aside class="sidebar"> <!-- sidebar -->
+                <div class="">
+                 <h2 class="brand-name font-w600"><span style="color: #f0ad4e; font-weight:bold">ex</span><span style="color: ">Ray</span></h2>
+                    <div class="main-menu">
+                        <ul class="menu-list">
+                            <li><a href="dashboard.html" style="font-weight: bold; color: #fff"><i class="fa fa-dashboard fa-icons" aria-expanded="true"></i>Dasboard</a></li>
+                            <li class="no-padding">
+                            <hr class="hr-light-border">
+                            </li>
+                            <li class="dropdown">
+                                   <a href="javascript:void(0)" aria-expanded="true">
+                                    <div class="pull-left">
+                                    <span>
+                                    <i class="fa fa-files-o fa-icons" aria-hidden="true"></i>
+                                    UI Elements
+                                    </span>
+                                    </div>
+                                    <div class="pull-right">
+                                    <i class="fa fa-angle-right fa-icons"></i>
+                                    </div>
+                                    <div class="clearfix"></div>
+
+                                    </a>
+
+                                    <ul class="collapse">
+                                    <li>
+                                    <a href=""><i class="fa fa-angle-left fa-icons"></i>Alerts</a>
+                                    </li>
+                                    <li>
+                                    <a href=""><i class="fa fa-angle-left fa-icons"></i>Buttons</a>
+                                    </li>
+                                    <li>
+                                    <a href=""><i class="fa fa-angle-left fa-icons"></i>Toggle Tabs</a>
+                                    </li>
+                                    <li>
+                                    <a href=""><i class="fa fa-angle-left fa-icons"></i>Buttons</a>
+                                    </li>
+
+                                    </ul>
+                            </li>
+
+
+
+
+                            <li><a><i class="fa fa-files-o fa-icons" aria-hidden="true"></i>
+                                    <span>Simple Forms</span>
+                                    <i class="fa fa-angle-right fa-icons"></i></a>
+
+                            </li>
+                            <li><a><i class="fa fa-files-o fa-icons" aria-hidden="true"></i>
+                                    <span>Simple Forms</span>
+                                    <i class="fa fa-angle-right fa-icons"></i></a>
+
+                            </li>
+                            <li><a><i class="fa fa-files-o fa-icons" aria-hidden="true"></i>
+                                    <span>Simple Forms</span>
+                                    <i class="fa fa-angle-right fa-icons"></i></a>
+
+                            </li>
+                            <li><a href="tables.html"><i class="fa fa-list fa-icons" aria-hidden="true"></i>Tables</a></li>
+                            <li><a href="charts.html"><i class="fa fa-laptop fa-icons" aria-hidden="true"></i>Charts</a></li>
+                            <li><a href="charts.html"><i class="fa fa-laptop fa-icons" aria-hidden="true"></i>Charts</a></li>
+                            <li><a><i class="fa fa-files-o fa-icons" aria-hidden="true"></i>
+                                    <span>Simple Forms</span>
+                                    <i class="fa fa-angle-right fa-icons"></i></a>
+
+                            </li>
+                            <li><a><i class="fa fa-files-o fa-icons" aria-hidden="true"></i>
+                                    <span>Simple Forms</span>
+                                    <i class="fa fa-angle-right fa-icons"></i></a>
+
+                            </li>
+                            <li><a><i class="fa fa-files-o fa-icons" aria-hidden="true"></i>
+                                    <span>Simple Forms</span>
+                                    <i class="fa fa-angle-right fa-icons"></i></a>
+
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+            </aside>  <!-- sidebar -->
+
+
+            <div class="main"> <!-- main -->
+
+                        <nav>  <!-- top main nav -->
+                         <div class="container-fluid">
+                            <div class="menu-btn-container">
+                                <a><i id="nav-btn" class="pe pe-7s-menu fa-custom" aria-hidden="true"></i></a> <!-- mnimized bar -->
+                            </div>
+                            <div class="nav-menu">
+                                <ul>
+                                    <li>
+                                        <a>
+                                            <i class="pe pe-7s-chat pe-2x fa-custom" aria-hidden="true"></i>
+                                            <span class="label label-success">3</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a>
+                                            <i class="pe pe-7s-power fa-custom"   aria-hidden="true"></i>
+                                            <span class="label label-warning">3</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <i class="pe-7s-edit top-nav-icon fa-custom" aria-hidden="true"></i>
+                                            <span class="label label-danger">3</span>
+                                        </a></li>
+
+                                    <li class="user-menu">
+                                        <a><img src="images/avarta2.jpg" /></a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                        </nav>
+
+                <div class="main-panel">  <!-- main-content -->
+                    <div class="container-fluid">
+                    <section>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="stat-box pa-20 bg-white">
+                                                <div class="stat-box-cr float-left">
+                                                <span class="font-w600 font-upper-case block color-grey">Profits</span>
+                                                <span class="counter">20,876</span>
+                                                </div>
+                                                <div class="stat-box-cl float-right">
+                                                <span class="dynamicsparkline"></span>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                 </div>
+
+                                  <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="stat-box pa-20 bg-white">
+                                                <div class="stat-box-cr float-left">
+                                                <span class="font-w600 font-upper-case block color-grey">Rates</span>
+                                                <span class="counter">20,876</span>
+                                                </div>
+                                                <div class="stat-box-cl float-right">
+                                                <span class="dynamicsparkline2"></span>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                 </div>
+
+
+
+                                 <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="stat-box pa-20 bg-white">
+                                                <div class="stat-box-cr float-left">
+                                                <span class="font-w600 font-upper-case block color-grey">Earnings</span>
+                                                <span class="counter">20,876</span>
+                                                </div>
+                                                <div class="stat-box-cl float-right">
+                                                <span class="dynamicsparkline3"></span>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                 </div>
+
+
+
+
+                                  <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="stat-box pa-20 bg-white">
+                                                <div class="stat-box-cr float-left">
+                                                <span class="font-w600 font-upper-case block color-grey">Sales</span>
+                                                <span class="counter">20,876</span>
+                                                </div>
+                                                <div class="stat-box-cl float-right">
+                                                <span class="dynamicbar"></span>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                 </div>
+
+
+
+                                 </div> <!-- row -->
+                            </section>
+                      <section>
+                            <div class="row">
+
+
+                             <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="bg-white stat-chart-box pa-20">
+                                        <div>
+                                         <span class="color-grey">Statistics</span>
+                                         <div class="color-grey pa-t">
+                                         <span class="pa-r">Daily <span class="caret"></span></span>
+                                         <span class="pa-r">Monthly <span class="caret"></span></span>
+                                         <span class="pa-r">Yearly <span class="caret"></span></span>
+                                         </div>
+                                        </div>
+                                        <div class="pa-t-b-30">
+                                        <canvas id="myChart"></canvas>
+                                        </div>
+
+                                        <div>
+                                         <span class="color-grey">
+                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                         tempor incididunt ut labore et dolore
+                                         </span>
+                                        </div>
+
+                                        </div>
+
+                                    </div>
+                                 </div>
+
+
+                                 <div class="col-md-8">
+                                    <div class="card">
+                                        <div class="stat-box pa-all bg-white">
+                                               <div id="chartdiv"></div>
+                                        </div>
+
+                                    </div>
+                                 </div>
+
+
+                            </div>
+                            </section>
+
+
+
+
+                            <section>
+                            <div class="row">
+
+
+
+
+
+                                  <div class="col-md-8">
+                                    <div class="card" style="overflow-x: auto">
+
+
+
+
+                            <style>
+                             table{
+                               width: 100%;
+                               font-size: 14px;
+                             }
+
+                             tr, td, th{
+                               /*border-top: 1px solid #f4f4f4;*/
+                               border-collapse: collapse;
+                             }
+
+                             th, td{
+                               padding:20px;
+                             }
+
+                             th{
+                               border-top: 1px solid #F0F0F0;
+                               border-bottom: 1px solid #F0F0F0;
+                               font-weight: bold;
+                             }
+
+                             tr{
+                                border-bottom: 1px solid  #F0F0F0;
+                             }
+
+                             td{
+
+                               padding-bottom: 15px;
+                               padding-top: 15px;
+                             }
+
+                             /*tr:nth-child(even), th{
+                               background-color:#f9f9f9;
+                             }*/
+
+
+                             th{
+                               text-transform: uppercase;
+                             }
+
+                             td img{
+                               width: 35px;
+                               height: 35px;
+                               border-radius: 50%;
+                             }
+                             .bu0{
+                               border-radius: 20px;
+                               border: 1px solid tomato;
+                               padding: 10px 20px;
+                               text-align: center;
+                               color: tomato;
+                               font-weight: bold;
+                             }
+
+                             .bu1{
+                               border-radius: 20px;
+                               border: 1px solid green;
+                               color: green;
+                               padding: 10px 20px;
+                               text-align: center;
+                               font-weight: bold;
+                             }
+
+
+                             .bu2{
+                               border-radius: 20px;
+                               border: 1px solid blue;
+                               color: blue;
+                               padding: 10px 20px;
+                               text-align: center;
+                               font-weight: bold;
+                             }
+
+
+                             .bu3{
+                               border-radius: 20px;
+                               border: 1px solid black;
+                               color: black;
+                               padding: 10px 20px;
+                               text-align: center;
+                               font-weight: bold;
+                             }
+
+
+                             </style>
+
+                                        <table>
+                                        <thead>
+                                        <tr>
+                                        <th>Product</th>
+                                        <th>Customer</th>
+                                        <th>Category</th>
+                                        <th>Amount</th>
+                                        <th>Amount</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                        <td>Alfred</td>
+                                        <td><img src="images/avatar-5.jpg"/> </td>
+                                        <td><span class="bu0">Mobile</span></td>
+                                        <td>Alfred</td>
+                                        <td>Alfred</td>
+                                        </tr>
+
+                                        <tr>
+                                        <td>Alfred</td>
+                                        <td><img src="images/avatar-5.jpg"/> </td>
+                                        <td><span class="bu1">Mobile</span></td>
+                                        <td>Alfred</td>
+                                        <td>Alfred</td>
+                                        </tr>
+
+
+                                        <tr>
+                                        <td>Alfred</td>
+                                        <td><img src="images/avatar-5.jpg"/> </td>
+                                        <td><span class="bu2">Mobile</span></td>
+                                        <td>Alfred</td>
+                                        <td>Alfred</td>
+                                        </tr>
+
+                                        <tr>
+                                        <td>Alfred</td>
+                                        <td><img src="images/avatar-5.jpg"/> </td>
+                                        <td><span class="bu3">Mobile</span></td>
+                                        <td>Alfred</td>
+                                        <td>Alfred</td>
+                                        </tr>
+
+                                        <tr>
+                                        <td>Alfred</td>
+                                        <td><img src="images/avatar-5.jpg"/> </td>
+                                        <td><span class="bu3">Mobile</span></td>
+                                        <td>Alfred</td>
+                                        <td>Alfred</td>
+                                        </tr>
+
+
+
+
+
+
+
+                                        </tbody>
+                                        </table>
+                                    </div>
+                                 </div>
+
+
+
+
+                                 <style>
+
+
+                                 </style>
+
+
+                                  <div class="col-md-4">
+                                    <div class="card" style="overflow-x: auto!important">
+                                       <div class="stat-box" style="padding: 10px; overflow: hidden; min-height: 100px; background: linear-gradient(skyblue,lightblue)">
+                                                 <h4>Total Progress</h4>
+                                                <div style="text-align: center;">
+                                                <span class="chart" data-percent="86">
+		                                        <span class="percent"></span>
+	                                            </span>
+                                                </div>
+
+                                        </div>
+                                        <div style="padding:30px; background:#8ccfea; color: #fff">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                                       </div>
+                                    </div>
+                                 </div><!-- end table sec -->
+
+
+
+                            </div>
+                            </section>
+
+
+
+
+
+
+
+                            <section>
+                            <div class="row">
+
+                                 <style>
+                                 .ul{
+                                   margin: 0;
+                                   padding: 0;
+                                 }
+                                 .ul li{
+                                   background: #fff;
+                                   border-bottom: 1px solid  #F0F0F0;
+                                   position: relative;
+                                   width: 100%;
+                                   min-height: 80px;
+                                   margin-bottom: 20px;
+                                 }
+
+                                 .task-widget{
+                                   width: 100%;
+
+                                 }
+                                 .left{
+                                   width:80%;
+                                   float: left;
+                                 }
+                                 .left img{
+                                   border-radius: 50%;
+                                   height: 45px;
+                                   width: 45px;
+                                 }
+
+                                 .right{
+                                   width: 20%;
+                                   float: right;
+                                   background: ;
+                                   font-size: 14px;
+                                   text-align: right;
+                                  padding-right: 20px;
+                                 }
+
+                                 .timeline-item{
+                                   position: relative;
+                                   height: 70px;
+                                   width: 80%;
+                                   padding-left: 30px;
+                                   color:#878787;
+                                   border-left: 1px solid red;
+                                 }
+
+                                 .timeline-item::before{
+                                   content: "";
+                                   position: absolute;
+                                   width: 15px;
+                                   height: 15px;
+                                   border: 1px solid tomato;
+                                   background: white;
+                                   border-radius: 50%;
+                                   color: red;
+                                   left: -8px;
+
+                                 }
+
+                                 #items div:last-child::after{
+                                   content: "";
+                                   position: absolute;
+                                   width: 10px;
+                                   height: 10px;
+                                   background: tomato;
+                                   border-radius: 50%;
+                                   color: red;
+                                   bottom: 0px;
+                                   left: -5px;
+
+                                 }
+
+                                 </style>
+                                   <div class="col-md-4">
+                                    <div class="card" style="overflow-x: auto!important">
+                                       <div id="items" class="stat-box pa-20">
+                                       <h3 style="color: #337ab7; font-weight: bold; font-size: 16px; margin-bottom: 30px ">Actions Log</h3>
+
+                                       <div class="timeline-item">
+                                        <span style="display: block; color: #337ab7; font-weight: bold; font-size: 14px">
+                                       Anyways i would like just do i</span>
+                                       <span style=" font-size: 14px; color: #878787; display: block">
+                                       Lorem ipsum dolor sit amet...
+                                       </span>
+                                       </div>
+
+                                       <div class="timeline-item">
+                                        <span style="display: block; color: #337ab7; font-weight: bold; font-size: 14px">
+                                       Anyways i would like just do i</span>
+                                       <span style=" font-size: 14px; color: #878787; display: block">
+                                       Lorem ipsum dolor sit amet...
+                                       </span>
+                                       </div>
+
+                                       <div class="timeline-item">
+                                        <span style="display: block; color: #337ab7; font-weight: bold; font-size: 14px">
+                                       Anyways i would like just do i</span>
+                                       <span style=" font-size: 14px; color: #878787; display: block">
+                                       Lorem ipsum dolor sit amet...
+                                       </span>
+                                       </div>
+
+                                       <div class="timeline-item">
+                                        <span style="display: block; color: #337ab7; font-weight: bold; font-size: 14px">
+                                       Anyways i would like just do i</span>
+                                       <span style=" font-size: 14px; color: #878787; display: block">
+                                       Lorem ipsum dolor sit amet...
+                                       </span>
+                                       </div>
+
+
+                                       </div>
+                                    </div>
+                                 </div><!-- end table sec -->
+
+
+
+
+
+                                  <div class="col-md-8">
+                                    <div class="card" style="overflow-x: auto!important; border-radius: 0px">
+                                       <div class="stat-chart-box pa-20" >
+                                       <h3 style="color: #337ab7; font-weight: bold; font-size: 16px;  ">Last Request<span class="btn btn-primary" style="float: right; border-radius: 4px">+Add More</span></h3>
+                                       <p style="margin-bottom: 20px"></p>
+                                       <ul class="ul">
+                                       <li>
+
+                                       <div class="task-widget">
+                                       <div class="left">
+                                       <div style="float: left; width: 10%; margin-right: 20px">
+                                       <img src="images/avatar-5.jpg"/>
+                                       </div>
+
+                                       <div style="width: 80%; float: left">
+                                       <span style="display: block; color: #337ab7; font-weight: bold; font-size: 14px">
+                                       Anyways i would like just do i</span>
+                                       <span style=" font-size: 14px; color: #878787; display: block">
+                                       Lorem ipsum dolor sit amet...
+                                       </span>
+                                       <span style=" font-size: 14px; color: #D1D1D1">Last Seen | today</span>
+                                       </div>
+
+                                       </div>
+                                       <div class="right" style="padding-top: 30px; color: #D1D1D1">
+                                       <span>12 mins ago</span>
+                                       </div>
+                                       </div>
+
+                                       </li>
+
+
+                                       <li>
+
+                                       <div class="task-widget">
+                                       <div class="left">
+                                       <div style="float: left; width: 10%; margin-right: 20px">
+                                       <img src="images/avatar-5.jpg"/>
+                                       </div>
+
+                                       <div style="width: 80%; float: left">
+                                       <span style="display: block; color: #337ab7; font-weight: bold; font-size: 14px">
+                                       Anyways i would like just do i</span>
+                                       <span style=" font-size: 14px; color: #878787; display: block">
+                                       Lorem ipsum dolor sit amet...
+                                       </span>
+                                       <span style=" font-size: 14px; color: #D1D1D1">Last Seen | today</span>
+                                       </div>
+
+                                       </div>
+                                       <div class="right" style="padding-top: 30px; color: #D1D1D1">
+                                       <span>12 mins ago</span>
+                                       </div>
+                                       </div>
+
+                                       </li>
+
+
+
+                                       <li>
+
+                                       <div class="task-widget">
+                                       <div class="left">
+                                       <div style="float: left; width: 10%; margin-right: 20px">
+                                       <img src="images/avatar-5.jpg"/>
+                                       </div>
+
+                                       <div style="width: 80%; float: left">
+                                       <span style="display: block; color: #337ab7; font-weight: bold; font-size: 14px">
+                                       Anyways i would like just do i</span>
+                                       <span style=" font-size: 14px; color: #878787; display: block">
+                                       Lorem ipsum dolor sit amet...
+                                       </span>
+                                       <span style=" font-size: 14px; color: #D1D1D1">Last Seen | today</span>
+                                       </div>
+
+                                       </div>
+                                       <div class="right" style="padding-top: 30px; color: #D1D1D1">
+                                       <span>12 mins ago</span>
+                                       </div>
+                                       </div>
+
+                                       </li>
+
+                                       </ul>
+                                       </div>
+                                    </div>
+                                 </div><!-- end table sec -->
+
+
+
+
+
+
+
+                            </div>
+                            </section>
+
+
+
+                    </div>
+                </div> <!-- main-content -->
+
+                <footer>
+                    <div class="container-fluid">
+                        <!--<strong>Express Admin templete version 1.2</strong> by responsive.com   -->
+                    </div>
+                </footer>
+            </div>  <!-- main -->
+
+
+        </div> <!-- page wrapper -->
+
+    </body>
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<script src="assets/js/jquery.easypiechart.min.js"></script>
+    <script src="assets/js/jquery.sparkline.js"></script>
+    <script src="assets/js/Chart.js"></script>
+   <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+   <!--<script src="assets/js/dataTables.bootstrap.min.js"></script>-->
+  <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://www.amcharts.com/lib/3/pie.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+
+
+
+     <script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        datasets: [{
+            label: "",
+            backgroundColor: '#d6eaf3',
+            borderColor: 'skyblue',
+            borderWidth: 1,
+            lineTension: 0,
+            data: [280, 290, 270, 280, 290, 300, 345],
+            /*data: [280, 290, 270, 280, 290, 300, 345],*/
+            /*data: [380, 390, 240, 400, 230, 410, 200],   */
+            }
+
+        ]
+    },
+
+    // Configuration options go here
+    options: {
+
+    animation: {
+            duration: 3000, // general animation time
+        },
+        hover: {
+            animationDuration: 4000, // duration of animations when hovering an item
+        },
+    title: {
+            display: false,
+            text: 'Custom Chart Title'
+        },
+
+    legend:{
+            display: false
+
+    } ,
+
+
+    scales: {
+            yAxes: [{
+                display:false
+            }],
+
+            xAxes: [{
+                display:false,
+            }],
+
+
+            }
+
+
+
+    }
+});
+
+    </script>
+
+
+    <script>
+      $(document).ready(function () {
+            $("#nav-btn").click(function () {
+                $('aside').toggleClass(" mini");
+                $('.main').toggleClass(" mini");
+
+            });
+        });
+
+
+
+      /* For line charts */
+
+        $(function() {
+        $('.inlinesparkline').sparkline();
+        var lineValues = [14,12,15,13,15,14,16];
+        var barValues = [10,12,15,13,15];
+        $('.dynamicsparkline').sparkline(lineValues, {type: 'line', height:'40px',
+        fillColor: '', width:'100%', lineWidth:2, lineColor: '#333'});
+
+        $('.dynamicsparkline2').sparkline(lineValues, {type: 'line', height:'40px',
+        fillColor: 'skyblue', width:'100%', lineWidth:2, lineColor: 'skyblue'});
+
+        $('.dynamicsparkline3').sparkline(lineValues, {type: 'line', height:'40px',
+        fillColor: '', width:'100%', lineWidth:2, lineColor: 'purple'});
+
+        $('.dynamicbar').sparkline(barValues, {type: 'bar', height:'50px', width:'100%', barWidth:7, barColor: 'rgb(43, 185, 195'} );
+
+        $('.inlinebar').sparkline('html', {type: 'bar', barColor: 'red'} );
+      });
+
+    /* line charts end */
+
+
+     $(function() {
+		$('.chart').easyPieChart({
+			easing: 'easeOutBounce',
+			onStep: function(from, to, percent) {
+				$(this.el).find('.percent').text(Math.round(percent));
+			}
+		});
+		var chart = window.chart = $('.chart').data('easyPieChart');
+		$('.js_update').on('click', function() {
+			chart.update(Math.random()*200-100);
+		});
+
+        //create instance
+    $('.chart').easyPieChart({
+        animate: 2000
+    });
+    //update instance after 5 sec
+    setInterval(function() {
+        $('.chart').data('easyPieChart').update(40);
+    }, 5000);
+	});
+    </script>
+
+    <script>
+    $(document).ready(function() {
+    $('#example').DataTable();
+} );
+
+    </script>
+
+    <script>
+
+var chart = AmCharts.makeChart( "chartdiv", {
+  "type": "pie",
+  "theme": "light",
+  "dataProvider": [ {
+    "country": "Lithuania",
+    "litres": 501.9
+  }, {
+    "country": "Czech Republic",
+    "litres": 301.9
+  }, {
+    "country": "Ireland",
+    "litres": 201.1
+  }, {
+    "country": "Germany",
+    "litres": 165.8
+  }, {
+    "country": "Australia",
+    "litres": 139.9
+  }, {
+    "country": "Austria",
+    "litres": 128.3
+  }, {
+    "country": "UK",
+    "litres": 99
+  }, {
+    "country": "Belgium",
+    "litres": 60
+  }, {
+    "country": "The Netherlands",
+    "litres": 50
+  } ],
+  "valueField": "litres",
+  "titleField": "country",
+   "balloon":{
+   "fixedPosition":true
+  },
+  "export": {
+    "enabled": true
+  }
+} );
+
+    </script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+
+
+
+<!DOCTYPE HTML>
+</html>

@@ -1,0 +1,325 @@
+<!Doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--<![endif]-->
+
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="robots" content="all,follow">
+        <title>Sel Admin by x.com</title>
+        <!-- font-awesome CSS external-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <!-- Bootstrap CSS external-->
+        <link rel="stylesheet" href="assets/css/bootstrap.css" />
+        <!-- custom CSS internal-->
+        <link  rel="stylesheet" href="assets/css/canvas.css"/>
+        <link  rel="stylesheet" href="assets/Icon-font-7-stroke-PIXEDEN-v-1.2.0/pe-icon-7-stroke/css/pe-icon-7-stroke.css"/>
+        <link  rel="stylesheet" href="assets/Icon-font-7-stroke-PIXEDEN-v-1.2.0/pe-icon-7-stroke/css/helper.css"/>
+        <link  rel="stylesheet" href="assets/css/jquery.dataTables.min.css"/>
+        <link  rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css"/>
+        <link  rel="stylesheet"  href="https://www.amcharts.com/lib/3/plugins/export/export.css"  media="all" />
+        <link  rel="stylesheet" href="assets/css/custom.css"/>
+
+    </head>
+
+    <body>
+
+        <div class="wrapper"> <!--page wrapper -->
+               <aside class="sidebar" id="aside"> <!-- sidebar -->
+                <div class="nav-container">
+                <h4 class="brand-name">
+                <!--<img height="32" width="32" style="color: white" src="https://unpkg.com/simple-icons@latest/icons/stackoverflow.svg" />-->
+                <img src="images/avatar-5.jpg"/>
+                <span class="thisuser">Rex Dasboard</span><span class="caret"></span>
+                </h4>
+                    <div class="main-menu">
+                        <ul class="menu-list">
+
+                            <li><a href="dashboard.html"><i class="fa fa-dashboard fa-icons" aria-expanded="true"></i>Dasboard</a></li>
+
+                            <li class="dropdown">
+                                   <a href="javascript:void(0)" aria-expanded="true">
+                                    <div class="pull-left">
+                                    <span>
+                                    <i class="fa fa-list fa-icons" aria-hidden="true"></i>
+                                    UI Elements
+                                    </span>
+                                    </div>
+                                    <div class="pull-right">
+                                    <i class="fa fa-angle-right fa-icons"></i>
+                                    </div>
+                                    <div class="clearfix"></div>
+
+                                    </a>
+
+                                    <ul class="collapse">
+                                    <li>
+                                    <a href="alerts.html">Alerts</a>
+                                    </li>
+                                    <li>
+                                    <a href="buttons.html">Buttons</a>
+                                    </li>
+                                    <li>
+                                    <a href="switches.html">Swiches</a>
+                                    </li>
+                                    <li>
+                                    <a href="ui.html">Toggle Tabs</a>
+                                    </li>
+
+                                    </ul>
+                            </li>
+
+                            <li><a href="maps.html"><i class="fa fa-map fa-icons" aria-hidden="true"></i>Maps</a></li>
+                            <li><a href="forms.html"><i class="fa fa-map fa-icons" aria-hidden="true"></i>Forms</a></li>
+                            <li><a href="advance_forms.html"><i class="fa fa-list fa-icons" aria-hidden="true"></i>Advance Form</a></li>
+                            <li><a href="tables.html"><i class="fa fa-list fa-icons" aria-hidden="true"></i>Tables</a></li>
+                            <li><a href="ui-panels.html"><i class="fa fa-list fa-icons" aria-hidden="true"></i>Panels</a></li>
+                            <li><a href="flot_charts.html"><i class="fa fa-bell fa-icons" aria-hidden="true"></i>Charts</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </aside>  <!-- sidebar -->
+
+            <div class="main"> <!-- main -->
+
+                        <nav>  <!-- top main nav -->
+                         <div class="container-fluid">
+                            <div class="menu-btn-container">
+                                <a><i id="nav-btn" class="pe pe-7s-menu fa-custom" aria-hidden="true"></i></a> <!-- mnimized bar -->
+                            </div>
+                            <div class="nav-menu">
+                                <ul>
+                                    <li>
+                                        <a>
+                                            <i class="pe pe-7s-chat pe-2x fa-custom" aria-hidden="true"></i>
+                                            <span class="label label-success">3</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a>
+                                            <i class="pe pe-7s-power fa-custom"   aria-hidden="true"></i>
+                                            <span class="label label-warning">3</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <i class="pe-7s-edit top-nav-icon fa-custom" aria-hidden="true"></i>
+                                            <span class="label label-danger">3</span>
+                                        </a></li>
+
+                                    <li class="user-menu">
+                                        <a><img src="images/avarta2.jpg" /></a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                        </nav>
+
+                <div class="main-panel">  <!-- main-content -->
+                    <div class="container-fluid">
+
+                            <section>
+                            <div class="row">
+                                 <div class="col-md-6">
+                                    <div class="card">
+                                    <div class="card-header">
+                                    <h5>Buttons</h5>
+                                    </div>
+
+                                     <div class="card-content pa-t-20 pa-b-20 pa-r-20 pa-l-20">
+                                     <span class="block">Use this class <code>.btn</code> and <code>.btn-primary</code> to create a general button</span>
+                                     <button class="btn btn-secondary">Default</button>
+                                     <button class="btn btn-primary">Primary</button>
+                                     <button class="btn btn-info">Info</button>
+                                     <button class="btn btn-success">Success</button>
+                                     <button class="btn btn-warning">Warning</button>
+                                     <button class="btn btn-danger">Danger</button>
+                                     <button class="btn btn-link">Link</button>
+
+                                    </div>
+
+                                    </div>
+                                 </div>
+
+
+                                 <div class="col-md-6">
+                                  <div class="card">
+                                  <div class="card-header">
+                                  <h5>Disabled Buttons</h5>
+                                  </div>
+                                  <div class="card-content pa-t-20 pa-b-20 pa-r-20 pa-l-20">
+                                     <span class="block">Use this class <code>.btn</code> and <code>disabled="disbaled"</code> to create a disabled button</span>
+                                     <button class="btn btn-secondary" disabled="disabled">Default</button>
+                                     <button class="btn btn-primary" disabled="disabled">Primary</button>
+                                     <button class="btn btn-info" disabled="disabled">Info</button>
+                                     <button class="btn btn-success" disabled="disabled">Success</button>
+                                     <button class="btn btn-warning" disabled="disabled">Warning</button>
+                                     <button class="btn btn-danger" disabled="disabled">Danger</button>
+                                     <button class="btn btn-link" disabled="disabled">Link</button>
+
+                                    </div>
+                                    </div>
+                                 </div>
+                            </div>
+
+                            </section>
+
+                             <section>
+                              <div class="row">
+                              <div class="col-md-6">
+                                  <div class="card">
+                                  <div class="card-header">
+                                  <h5>Icon Buttons </h5>
+                                  </div>
+                                  <div class="card-content pa-t-20 pa-b-20 pa-r-20 pa-l-20">
+                                   <span class="block">Use this class <code>.btn</code> and <code> i </code> to create a Icon button</span>
+                                     <button class="btn btn-secondary">Default</button>
+                                     <button class="btn btn-primary"><i class="fa fa-star"></i> Primary</button>
+                                     <button class="btn btn-info"><i class="fa fa-lightbulb-o"></i> Info</button>
+                                     <button class="btn btn-success"> <i class="fa fa-magic"></i> Success</button>
+                                     <button class="btn btn-warning"> <i class="fa fa-map-marker"></i> Warning</button>
+                                     <button class="btn btn-danger"> <i class="fa fa-rss"></i> Danger</button>
+                                     <button class="btn btn-link"> <i class="fa fa-link"></i> Link</button>
+
+                                    </div>
+                                    </div>
+                                 </div>
+
+
+                                   <div class="col-md-6">
+                                  <div class="card">
+                                  <div class="card-header">
+                                  <h5>Icon Buttons</h5>
+                                  </div>
+                                  <div class="card-content pa-t-20 pa-b-20 pa-r-20 pa-l-20">
+                                   <span class="block">Use this class <code>.btn</code> and <code> btn-outline-primary</code> to create a Outline button</span>
+                                     <button class="btn btn-outline-secondary">Default</button>
+                                     <button class="btn btn-outline-primary">Primary</button>
+                                     <button class="btn btn-outline-info">Info</button>
+                                     <button class="btn btn-outline-success">Success</button>
+                                     <button class="btn btn-outline-warning">Warning</button>
+                                     <button class="btn btn-outline-danger">Danger</button>
+                                     <button class="btn btn-outline-link">Link</button>
+
+                                    </div>
+                                    </div>
+                                 </div>
+
+                            </div>
+                 </section>
+
+                  <section>
+                            <div class="row">
+                                 <div class="col-md-6">
+                                    <div class="card">
+                                    <div class="card-header">
+                                    <h5>Round Buttons</h5>
+                                    </div>
+                                     <div class="card-content pa-t-20 pa-b-20 pa-r-20 pa-l-20">
+                                     <span class="block">Use this class <code>.btn</code> and <code>.btn-round</code> to create a general button</span>
+                                     <button class="btn btn-round btn-secondary">Default</button>
+                                     <button class="btn btn-round btn-primary">Primary</button>
+                                     <button class="btn btn-round btn-info">Info</button>
+                                     <button class="btn btn-round btn-success">Success</button>
+                                     <button class="btn btn-round btn-warning">Warning</button>
+                                     <button class="btn btn-round btn-danger">Danger</button>
+                                    </div>
+
+                                    </div>
+                                 </div>
+
+
+                                 <div class="col-md-6">
+                                  <div class="card">
+                                  <div class="card-header">
+                                  <h5>Round Disabled Buttons</h5>
+                                  </div>
+                                  <div class="card-content pa-t-20 pa-b-20 pa-r-20 pa-l-20">
+                                   <span class="block">Use this class <code>.btn</code> , <code>disabled="disbaled"</code> and  <code>.btn-round</code> to create a disabled button</span>
+                                     <button class="btn btn-round btn-secondary" disabled="disabled">Default</button>
+                                     <button class="btn btn-round btn-primary" disabled="disabled">Primary</button>
+                                     <button class="btn btn-round btn-info" disabled="disabled">Info</button>
+                                     <button class="btn btn-round btn-success" disabled="disabled">Success</button>
+                                     <button class="btn btn-round btn-warning" disabled="disabled">Warning</button>
+                                     <button class="btn btn-round btn-danger" disabled="disabled">Danger</button>
+                                    </div>
+                                    </div>
+                                 </div>
+
+                            </div>
+
+                            </section>
+
+
+                            <section>
+                            <div class="row">
+                                 <div class="col-md-6">
+                                    <div class="card">
+                                    <div class="card-header">
+                                    <h5>Small Buttons</h5>
+                                    </div>
+
+                                     <div class="card-content pa-t-20 pa-b-20 pa-r-20 pa-l-20">
+                                     <span class="block">Use this class <code>.btn</code> and <code>.btn-sm</code> to create small buttons</span>
+                                     <button class="btn btn-sm btn-secondary">Default</button>
+                                     <button class="btn btn-sm btn-primary">Primary</button>
+                                     <button class="btn btn-sm btn-info">Info</button>
+                                     <button class="btn btn-sm btn-success">Success</button>
+                                     <button class="btn btn-sm btn-warning">Warning</button>
+                                     <button class="btn btn-sm btn-danger">Danger</button>
+                                    </div>
+
+                                    </div>
+                                 </div>
+
+
+                                 <div class="col-md-6">
+                                    <div class="card">
+                                    <div class="card-header">
+                                    <h5>Large Buttons</h5>
+                                    </div>
+
+                                     <div class="card-content pa-t-20 pa-b-20 pa-r-20 pa-l-20">
+                                     <span class="block">Use this class <code>.btn</code> and <code>.btn-lg</code> to create large buttons</span>
+                                     <button class="btn btn-lg btn-secondary">Default</button>
+                                     <button class="btn btn-lg btn-primary">Primary</button>
+                                     <button class="btn btn-lg btn-info">Info</button>
+                                     <button class="btn btn-lg btn-success">Success</button>
+                                     <button class="btn btn-lg btn-warning">Warning</button>
+                                     <button class="btn btn-lg btn-danger">Danger</button>
+                                    </div>
+
+                                    </div>
+                                 </div>
+
+                            </div>
+
+                            </section>
+                    </div>
+                </div> <!-- main-content -->
+
+                <footer>
+                    <div class="container-fluid">
+                        <!--<strong>Express Admin templete version 1.2</strong> by responsive.com   -->
+                    </div>
+                </footer>
+            </div>  <!-- main -->
+
+
+        </div> <!-- page wrapper -->
+
+    </body>
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/toggle.js"></script>
+
+</html>

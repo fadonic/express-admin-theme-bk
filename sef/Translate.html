@@ -1,0 +1,568 @@
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777777;
+  padding: 30px;
+}
+.header {
+  position: relative;
+  height: 95vh;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(126, 213, 111, 0.8),
+    rgba(40, 180, 131, 0.8)),
+    url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon( 0% 0%, 0% 100%, 100% 75vh, 100% 0%)
+}
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+.logo {
+  height: 35px;
+}
+.heading-primary {
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1.0, 1.0);
+}
+.heading-primary-main {
+  font-weight: 400;
+  font-size: 60px;
+  letter-spacing: 35px;
+  display: block;
+  animation: moveInLeft 1.5s ease-out
+}
+.heading-primary-sub {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 17.4px;
+  display: block;
+  animation: moveInRight 1.5s ease-out
+}
+.text-box{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 100px;
+  padding: 15px 40px;
+  transition: all .2s;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1.0, 1.0);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+}
+.btn {
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #777777;
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px)
+  }
+  80% {
+    transform: translateX(10px)
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0)
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px)
+  }
+  80% {
+    transform: translateX(-10px)
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0)
+  }
+}
+</style>
+<header class="header">
+    <div class="logo-box">
+      <img src="img/logo-white.png" alt="" class="logo">
+    </div>
+    <div class="text-box">
+      <h1 class="heading-primary">
+        <span class="heading-primary-main">outdoors</span>
+        <span class="heading-primary-sub">is where live happens</span>
+      </h1>
+      <a href="#" class="btn btn-white">Discover our tours</a>
+    </div>
+    https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip
+  </header>
+
+<!--
+
+  Or use radial-gradient:
+
+.box {
+  height: 200px;
+  width: 200px;
+  background: radial-gradient(circle at 70% 0%, blue 60%,transparent 60.5%);
+
+}
+<div class="box">
+
+</div>-->
+
+<!--  .box {
+  height: 200px;
+  width: 200px;
+  background: blue;
+  -webkit-clip-path: circle(75.5% at 66% 18%);
+  clip-path: circle(75.5% at 66% 18%);
+}
+<div class="box">
+
+</div>-->
+
+
+<!--
+#clipped {
+  width: 300px;
+  height: 300px;
+  background-color: #f00;
+  -webkit-clip-path: url(#test);
+          clip-path: url(#test);
+}
+<div id="clipped"></div>
+
+<svg width="0" height="0">
+        <defs>
+            <clipPath id="test">
+                <path d="M163.3,112.12c9.83-13.64,2.9-38.95-3.9-58.06-4.93-13.83-11.42-23.17-19-29.36A46.5,46.5,0,0,0,124,16.19a74.54,74.54,0,0,0-20.86-2.67C77.61,13.14,72.32,2.57,52.16.3,41.2-.94,32.84,1.72,27.53,7.69c-3.27,3.68-5.39,8.63-6.23,14.7a114.29,114.29,0,0,1-2.67,15.25A85.23,85.23,0,0,1,14.86,49C12.55,54.6,9.59,60.44,5.73,68c-7.28,14.27-11.22,41.2,11,57.82,7.91,5.64,17.48,5.86,27.8,4.23,16.71-2.65,35.35-10.14,52-7.3C116.53,126.16,145.49,139.85,163.3,112.12Z"/>
+            </clipPath>
+        </defs>
+    </svg>-->
+
+
+<!--body {
+  margin: 40px;
+}
+
+.wrapper {
+		display: grid;
+    grid-gap: 10px;
+		grid-template-columns: [col] 100px [col] 100px [col] 100px;
+		grid-template-rows: [row] auto [row] auto [row] ;
+		background-color: #fff;
+		color: #444;
+	}
+
+	.box {
+		background-color:#444;
+		color:#fff;
+		padding:20px;
+		font-size:150%;
+	}
+
+	.a {
+		grid-column: col / span 2;
+		grid-row: row 1 / 3;
+	}
+	.b {
+		grid-column: col 3 / span 1;
+		grid-row: row ;
+	}
+	.c {
+		grid-column: col 3 / span 1;
+		grid-row: row 2 ;
+	}
+	.d {
+		grid-column: col / span 1;
+		grid-row: row 3;
+	}
+
+	.e {
+		grid-column: col 2 / span 1;
+		grid-row: row 3;
+	}
+
+.f {
+  grid-column: col 3 / span 1;
+  grid-row: row 3;
+}
+<div class="wrapper">
+  <div class="box a">A</div>
+  <div class="box b">B</div>
+  <div class="box c">C</div>
+  <div class="box d">D</div>
+  <div class="box e">E</div>
+  <div class="box f">F</div>
+</div>-->
+
+<!--https://stackoverflow.com/questions/50498296/constant-function-run-when-user-typing-into-input-tag  -->
+
+
+<!--.container {
+    pointer-events: none;
+}
+
+.checkmark {
+    pointer-events: auto;
+}
+
+.container a {
+    pointer-events: auto;
+}-->
+
+<!--
+
+body {
+  font-family: Avenir Next, Avenir, SegoeUI, sans-serif;
+}
+
+
+form {
+  margin: 2em 0;
+}
+.field {
+  display: flex;
+  flex-flow: column-reverse;
+  margin-bottom: 1em;
+}
+label, input {
+  transition: all 0.2s;
+  touch-action: manipulation;
+}
+input {
+  font-size: 1.5em;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  font-family: inherit;
+  -webkit-appearance: none;
+  border-radius: 0;
+  padding: 0;
+  cursor: text;
+}
+
+input:focus {
+  outline: 0;
+  border-bottom: 1px solid #666;
+}
+
+label {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+input:placeholder-shown + label {
+  cursor: text;
+  max-width: 66.66%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: left bottom;
+  transform: translate(0, 2.125rem) scale(1.5);
+}
+::-webkit-input-placeholder {
+  opacity: 0;
+  transition: inherit;
+}
+input:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+input:not(:placeholder-shown) + label,
+input:focus + label {
+  transform: translate(0, 0) scale(1);
+  cursor: pointer;
+}
+
+ form p select, form p select.selectField {
+	width: 195px;
+	padding: 1px 3px;
+}
+  <form action="">
+  <div class="field">
+    <input type="text" name="fullname" id="fullname" placeholder="Jane Appleseed">
+    <label for="fullname">Name</label>
+  </div>
+
+  <div class="field">
+    <input type="email" name="email" id="email" placeholder="jane.appleseed@example.com">
+    <label for="email">Email</label>
+  </div>
+    <div id="lettersSelection" >
+      <p class="required">
+        <select name="letters" id="letters" class="selectField" required="">
+          <option value="" selected disabled hidden>Your Letter</option>
+          <option value="A">Letter A</option>
+          <option value="B">Letter B</option>
+          <option value="C">Letter C</option>
+        </select>
+        <label for="letters">Letters</label>
+      </p>
+    </div>
+  </form>-->
+
+  <!--09035881135  -->
+
+  <!-- http://preview.themeforest.net/item/radiant-bootstrap-4-admin-template/full_screen_preview/21724920 -->
+  <!-- http://uxliner.com/adminkit/demo/main/ltr/index.html -->
+
+  <!-- var div = document.getElementById("target");
+div.className = "the-class";
+.the-class {
+  color: gray;
+}
+.the-class:first-letter {
+  color: orange;
+}
+<div id="target">
+  Hello
+</div>
+ -->
+
+ <!--
+<style type="text/css">
+    .heading{color: white;
+            font-family: serif;
+            font-size: 100px;}
+    .center{position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            text-align: center;}
+    .footer{background-color: #1f2326;
+            width: 100%;
+            text-align: center;}
+    ul {list-style-type: none;
+        margin-top: 30px;}
+
+    li {float: left;}
+
+    li a{padding: 16px;}
+    .image{width: 40px;
+           height: 40px;}
+    .centerimage{text-align: center;
+                 display: inline-block;}
+    .content{height: 50%;
+            padding-top: 60%;
+            background-color: #1f2326;}
+</style>
+<body background="black.png" >
+
+<div class="center"  style="height: auto; ">
+    <h1 class="heading">Parag Singh<p style="font-family: serif; font-size:
+  30px; color: white; text-align: center;">"Web and App Developer"</p></h1>
+<br><br>
+    <center>
+    <img src="mouse.png" width="80" height="80">
+    </center>
+</div>
+
+
+<img src="line.jpg" style="width: 100%; margin-top: 50%;">
+
+
+<div class="content">
+    <p style="color: white">hello</p>
+</div>
+
+
+
+<div class="footer">
+<footer>
+    <h1 style="font-family: serif; color: white; font-size: 80px; padding-
+ top: 80px">I'd Love to talk</h1>
+    <p style="font-family: serif; color: white; font-size: 25px">If you have
+  any query and want to contact me</p>
+    <a href="mailto:psparag1997@gmail.com"><img src="mail-128.png"
+   style="width: 60px; height: 60px"></img></a>
+    <p style="color: white; font-family: serif; font-size: 20px">I'm also
+    active on social media platforms.</p>
+    <ul class="centerimage">
+        <li><a href="https://www.linkedin.com/in/parag-singh-28a567154/">
+   <img src="twitter-128.png" class="image"></a></li>
+        <li><a href="https://www.instagram.com/parag_singh/"><img
+    src="instagram-128.png" class="image"></a></li>
+        <li><a href="https://www.facebook.com/psparagsingh"><img
+    src="facebook-3-128.png" class="image"></a></li>
+        <li><a href="https://twitter.com/ParagSi66886580"><img
+    src="linkedin-3-128.png" class="image"></a></li>
+    </ul>
+    <p style="color: white; text-align: center; font-family: serif; font-
+    size: 20px">Hand crafted in India by Parag Singh </p>
+    <img src="capture.jpg" style="width: 100% ; bottom: 0px; margin-top:
+        40px ">
+
+    </footer>
+  </div>
+
+ </body>
+ -->
+
+<!-- smooth  scroll -->
+
+<!-- <a id="servicios"></a>
+    <a id="galeria"></a>
+    <a id="contacto"></a>
+    <header class="nav">
+        <nav>
+            <ul>
+                <li><a href="#servicios"> Servicios </a> </li>
+                <li><a href="#galeria"> Galeria </a> </li>
+                <li><a href="#contacto">Contacta  nos </a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="main">
+        <article class="panel" id="servicios">
+            <h1> Nuestros Servicios</h1>
+        </article>
+
+        <article class="panel" id="galeria">
+            <h1> Mustra de nuestro trabajos</h1>
+        </article>
+
+        <article class="panel" id="contacto">
+            <h1> Pongamonos en contacto</h1>
+        </article>
+    </section>
+
+    /*
+ *Styling
+ */
+
+html,body {
+        width: 100%;
+        height: 100%;
+        position: relative;
+}
+body {
+    overflow: hidden;
+}
+
+header {
+    background: #fff;
+    position: fixed;
+    left: 0; top: 0;
+    width:100%;
+    height: 3.5rem;
+    z-index: 10;
+}
+
+nav {
+    width: 100%;
+    padding-top: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    width: inherit;
+    margin: 0;
+}
+
+
+ul li:nth-child( 3n + 1), #main .panel:nth-child( 3n + 1) {
+    background: rgb( 0, 180, 255 );
+}
+
+ul li:nth-child( 3n + 2), #main .panel:nth-child( 3n + 2) {
+    background: rgb( 255, 65, 180 );
+}
+
+ul li:nth-child( 3n + 3), #main .panel:nth-child( 3n + 3) {
+    background: rgb( 0, 255, 180 );
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 8px;
+    margin: 0 0.5rem;
+    padding: 5px 8px;
+    padding: 0.3rem 0.5rem;
+    border-radius: 2px;
+    line-height: 1.5;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.panel {
+    width: 100%;
+    height: 500px;
+    z-index:0;
+    -webkit-transform: translateZ( 0 );
+    transform: translateZ( 0 );
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+
+.panel h1 {
+    font-family: sans-serif;
+    font-size: 64px;
+    font-size: 4rem;
+    color: #fff;
+    position:relative;
+    line-height: 200px;
+    top: 33%;
+    text-align: center;
+    margin: 0;
+}
+
+/*
+ *Scrolling
+ */
+
+a[ id= "servicios" ]:target ~ #main article.panel {
+    -webkit-transform: translateY( 0px);
+    transform: translateY( 0px );
+}
+
+a[ id= "galeria" ]:target ~ #main article.panel {
+    -webkit-transform: translateY( -500px );
+    transform: translateY( -500px );
+}
+a[ id= "contacto" ]:target ~ #main article.panel {
+    -webkit-transform: translateY( -1000px );
+    transform: translateY( -1000px );
+}
+
+ -->
+
+<!-- https://stackoverflow.com/questions/36605372/short-lines-either-side-text -->
+
+<!-- https://stackoverflow.com/questions/50707056/custom-css-inside-of-an-html-placeholder -->
